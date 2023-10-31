@@ -2,14 +2,17 @@ body{
     font-family: 'Fira Code', monospace;
     background-color:white;
 }
+/* Style body with a white background and font family fira code and monospace. */
 footer{
     background-color: black;
     color: white;
     text-align: center;
 }
+/* Style footer with a black background, centered text, and white text. */
 header,footer{
     padding: 15px;
 }
+/* Add some padding to the header and footer for spacing. */
 @media screen and (min-width:1024px){
     .container{
         display: grid;
@@ -20,26 +23,30 @@ header,footer{
         margin-left: 200px;
     }
 }
-
+/* On screens larger than or equal to 1024 pixels wide, make container into a grid of three columns. Also add margins on the body. */
 img{
     width:100%;
     height:auto;
 }
+/* Styled img with width 100% and height auto */
 @media screen and (max-width:1023px) and (min-width: 801px){
     .container{
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
     }
 }
+/*On screens larger than 800 pixels and smaller than 481 pixels, make into a grid of three columns. */
 @media screen and (max-width:800px) and (min-width: 481px){
     .container{
         display: grid;
         grid-template-columns: 1fr 1fr;
     }
 }
+/* On screens larger than 480 pixels and smaller than 801 pixels, make into a grid of two columns. */
 @media screen and (max-width:480px){
     .container{
         display: grid;
         grid-template-rows: 1fr;
     }
 }
+/* On screens less than 481 pixels wide, turn it into one column. */
