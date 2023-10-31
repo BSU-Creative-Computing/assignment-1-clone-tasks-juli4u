@@ -1,6 +1,6 @@
 body{
     font-family: 'Fira Code', monospace;
-    background-color: azure;
+    background-color:white;
 }
 footer{
     background-color: black;
@@ -9,4 +9,37 @@ footer{
 }
 header,footer{
     padding: 15px;
+}
+@media screen and (min-width:1024px){
+    .container{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+    body{
+        margin-right: 200px;
+        margin-left: 200px;
+    }
+}
+
+img{
+    width:100%;
+    height:auto;
+}
+@media screen and (max-width:1023px) and (min-width: 801px){
+    .container{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
+@media screen and (max-width:800px) and (min-width: 481px){
+    .container{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+}
+@media screen and (max-width:480px){
+    .container{
+        display: grid;
+        grid-template-rows: 1fr;
+    }
 }
