@@ -200,6 +200,9 @@ footer{
 }
 /* Extra small screens (max-width: 481px) */
 @media screen and (max-width:481px) {
+   .navbar{
+        padding: 20px;
+   }
    .container{
         display: grid;
         grid-template-columns: 100%;
