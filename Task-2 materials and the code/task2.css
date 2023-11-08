@@ -185,6 +185,9 @@ footer{
         margin-top: 5px;
         margin-bottom: 5px;
     }
+    .search-box{
+        display: none;
+    }
     .avengers_endgame {
         grid-column: span 2;
     }
@@ -202,6 +205,9 @@ footer{
 @media screen and (max-width:481px) {
    .navbar{
         padding: 20px;
+   }
+   .search-box{
+        display: none;
    }
    .container{
         display: grid;
