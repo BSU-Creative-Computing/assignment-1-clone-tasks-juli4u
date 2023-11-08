@@ -1,17 +1,21 @@
+// Define variables for colors
 $background_color: #4e89ae #43658b #ed6663 #ffa372;
 $hfbackground_color: #8ccff7;
 $hover_color: #444;
+// Styling for header and footer
 header,footer{
-    background-color: $hfbackground_color;
+    background-color: $hfbackground_color; // Background color
     width:100%;
 }
 footer{
-    height:50px;
+    height:50px; // Fixed height for the footer
 }
 header{
-    text-align: center;
+    text-align: center; // Center-align text within the header
 }
+// Styling for blocks and circles
 .blocks{
+    // Hover effect
     :hover{
         color:$hover_color;
     }
@@ -19,29 +23,32 @@ header{
     padding-bottom: 52px;
 }
 .circles{
+    // Hover effect
     :hover{
         color: $hover_color;
     }
     padding-top: 52px;
     padding-bottom: 52px;
 }
+// Individual block styles
 .b1{
     background-color: nth($background_color,1);
     width: 100%;
     height: 50px;
 }
 .b2{
-    @extend .b1;
+    @extend .b1; // Extend the styles of .b1
     background-color: nth($background_color,2);
 }
 .b3{
-    @extend .b1;
+    @extend .b1; // Extend the styles of .b1
     background-color: nth($background_color,3);
 }
 .b4{
-    @extend .b1;
+    @extend .b1; // Extend the styles of .b1
     background-color: nth($background_color,4);
 }
+// Individual circle styles
 .circle1{
     border-radius: 50%;
     height:70px;
@@ -49,39 +56,41 @@ header{
     background-color: nth($background_color,1);
 }
 .circle2{
-    @extend .circle1;
+    @extend .circle1; // Extend the styles of .circle1
     background-color: nth($background_color,2);
     height:80px;
     width:80px;
 }
 .circle3{
-    @extend .circle1;
+    @extend .circle1; // Extend the styles of .circle1
     background-color: nth($background_color,3);
     height:90px;
     width:90px;
 }
 .circle4{
-    @extend .circle1;
+    @extend .circle1; // Extend the styles of .circle1
     background-color: nth($background_color,4);
     height:100px;
     width:100px;
 }
+// Define a mixin for responsive breakpoints
 @mixin breakpoint($minw, $maxw) {
     @media screen and (max-width: $maxw) and (min-width: $minw){
-        @content
+        @content; // Include the provided content within the media query
     }
 }
-
+// Responsive design for the header
 header{
     @include breakpoint(801px,2000px){
         .box2{
-            display: none;
+            display: none; // Hide box2
         }
         .box3{
-            display: none;
+            display: none; // Hide box3
         }
     }
 }
+// Styling for the circles container
 .circles{
     display: flex;
     justify-content: center;
@@ -92,13 +101,14 @@ header{
 header{
     @include breakpoint(481px,800px){
         .box1{
-            display: none;
+            display: none; // Hide box1
         }
         .box3{
-            display: none;
+            display: none; // Hide box3
         }
     }
 }
+// Responsive design for the circles
 .circles{
     @include breakpoint(300px, 620px){
         flex-direction: column;
@@ -107,10 +117,10 @@ header{
 header{
     @include breakpoint(200px,481px){
         .box1{
-            display: none;
+            display: none; // Hide box1
         }
         .box2{
-            display: none;
+            display: none; // Hide box2
         }
     }
 }
