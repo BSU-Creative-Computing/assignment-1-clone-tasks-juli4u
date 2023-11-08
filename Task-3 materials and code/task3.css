@@ -1,0 +1,111 @@
+header, footer {
+  background-color: #8ccff7;
+  width: 100%;
+}
+
+footer {
+  height: 50px;
+}
+
+header {
+  text-align: center;
+}
+
+.blocks {
+  padding-top: 52px;
+  padding-bottom: 52px;
+}
+.blocks :hover {
+  color: #444;
+}
+
+.circles {
+  padding-top: 52px;
+  padding-bottom: 52px;
+}
+.circles :hover {
+  color: #444;
+}
+
+.b1, .b4, .b3, .b2 {
+  background-color: #4e89ae;
+  width: 100%;
+  height: 50px;
+}
+
+.b2 {
+  background-color: #43658b;
+}
+
+.b3 {
+  background-color: #ed6663;
+}
+
+.b4 {
+  background-color: #ffa372;
+}
+
+.circle1, .circle4, .circle3, .circle2 {
+  border-radius: 50%;
+  height: 70px;
+  width: 70px;
+  background-color: #4e89ae;
+}
+
+.circle2 {
+  background-color: #43658b;
+  height: 80px;
+  width: 80px;
+}
+
+.circle3 {
+  background-color: #ed6663;
+  height: 90px;
+  width: 90px;
+}
+
+.circle4 {
+  background-color: #ffa372;
+  height: 100px;
+  width: 100px;
+}
+
+@media screen and (max-width: 2000px) and (min-width: 801px) {
+  header .box2 {
+    display: none;
+  }
+  header .box3 {
+    display: none;
+  }
+}
+
+.circles {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  align-items: center;
+}
+
+@media screen and (max-width: 800px) and (min-width: 481px) {
+  header .box1 {
+    display: none;
+  }
+  header .box3 {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 620px) and (min-width: 300px) {
+  .circles {
+    flex-direction: column;
+  }
+}
+
+@media screen and (max-width: 481px) and (min-width: 200px) {
+  header .box1 {
+    display: none;
+  }
+  header .box2 {
+    display: none;
+  }
+}/*# sourceMappingURL=task3.css.map */
