@@ -108,6 +108,7 @@ footer{
     }
     .the_millenium_trilogy{
         width:100%;
+        grid-column-start: 2;
     }
     .rage{
         width:100%;
@@ -135,6 +136,7 @@ footer{
     }
     .the_millenium_trilogy{
         width:100%;
+        grid-column-start: 2;
     }
     .rage{
         width:100%;
