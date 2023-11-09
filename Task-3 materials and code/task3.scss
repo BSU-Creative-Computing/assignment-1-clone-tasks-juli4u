@@ -110,7 +110,7 @@ header{
 }
 // Responsive design for the circles
 .circles{
-    @include breakpoint(300px, 620px){
+    @include breakpoint(715px, 620px){
         flex-direction: column;
     }
 }
